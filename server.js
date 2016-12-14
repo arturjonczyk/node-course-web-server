@@ -33,6 +33,11 @@ app.get('/', (req, res) => res.render('home.hbs', {
 app.get('/about', (req, res) => res.render('about.hbs', {
     title: 'About Page'
 }));
+
+app.get('/projects', (req, res) => res.render('projects.hbs', {
+    title: 'Projects Page'
+}));
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: "Error handling request"
